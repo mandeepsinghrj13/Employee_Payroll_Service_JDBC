@@ -19,4 +19,12 @@ public class EmployeePayrollDBServiceTest {
         List<EmployeePayrollData> employeePayrollDataList = employeePayrollDBService.readData();
         Assert.assertNotSame(6, employeePayrollDataList.size());
     }
+    @Test
+    public void givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDB() {
+        EmployeePayrollService employeePayrollService = new EmployeePayrollService();
+        List<EmployeePayrollData> employeePayrollData = employeePayrollService.readEmployeePayrollData(EmployeePayrollService.IOService.DB_IO);
+        employeePayrollService.updateEmployeeSalary("Terisa", 3000000.00);
+        boolean result = employeePayrollService.checkEmployeePayrollInSyncWithDB("Terisa");
+        Assert.assertTrue(result);
+    }
 }
