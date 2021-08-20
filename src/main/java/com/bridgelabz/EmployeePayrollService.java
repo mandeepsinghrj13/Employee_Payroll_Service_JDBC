@@ -9,14 +9,14 @@ public class EmployeePayrollService {
     }
 
     private List<EmployeePayrollData> employeePayrollDataList;
-    EmployeePayrollDBService employeePayrollDBService = new EmployeePayrollDBService();
+    EmployeePayrollDBService employeePayrollDBService =  EmployeePayrollDBService.getInstance();
 
     public EmployeePayrollService(List<EmployeePayrollData> employeePayrollDataList) {
         this.employeePayrollDataList = employeePayrollDataList;
     }
 
     public EmployeePayrollService() {
-        this.employeePayrollDataList = new ArrayList<EmployeePayrollData>();
+        this.employeePayrollDataList = new ArrayList<>();
     }
 
     public List<EmployeePayrollData> readEmployeePayrollData(IOService ioService) {

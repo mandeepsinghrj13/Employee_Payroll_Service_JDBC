@@ -1,44 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.EmployeePayrollDBServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-20T11:59:56" hostname="DEEPSINGH" time="1.779">
+<testsuite name="com.bridgelabz.EmployeePayrollDBServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-08-20T16:02:43" hostname="DEEPSINGH" time="2.194">
   <properties/>
-  <testcase name="givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDBUsingPreparedStatement" classname="com.bridgelabz.EmployeePayrollDBServiceTest" time="1.502"/>
-  <testcase name="givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDB" classname="com.bridgelabz.EmployeePayrollDBServiceTest" time="0.277"/>
+  <testcase name="givenEmployeePayrollInDB_WhenRetrieved_ShouldNotMatchEmployeeCount" classname="com.bridgelabz.EmployeePayrollDBServiceTest" time="1.403"/>
+  <testcase name="givenEmployeePayrollInDB_WhenRetrieved_ShouldMatchEmployeeCount" classname="com.bridgelabz.EmployeePayrollDBServiceTest" time="0.058"/>
+  <testcase name="givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDBUsingPreparedStatement" classname="com.bridgelabz.EmployeePayrollDBServiceTest" time="0.37"/>
+  <testcase name="givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDB" classname="com.bridgelabz.EmployeePayrollDBServiceTest" time="0.36"/>
   <system-out><![CDATA[connecting to database : jdbc:mysql://localhost:3306/payroll_service?userSSL=false
 Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@3ed7bd5a
 Driver Loaded
  com.mysql.jdbc.Driver
  com.mysql.fabric.jdbc.FabricMySQLDriver
 connecting to database : jdbc:mysql://localhost:3306/payroll_service?userSSL=false
-Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@2c29a4fe
+Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@53914e0c
 Driver Loaded
  com.mysql.jdbc.Driver
  com.mysql.fabric.jdbc.FabricMySQLDriver
 connecting to database : jdbc:mysql://localhost:3306/payroll_service?userSSL=false
-Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@5b07b1db
+Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@6d930309
 Driver Loaded
  com.mysql.jdbc.Driver
  com.mysql.fabric.jdbc.FabricMySQLDriver
 connecting to database : jdbc:mysql://localhost:3306/payroll_service?userSSL=false
-Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@612f9a18
+Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@3b2a9e04
 Driver Loaded
  com.mysql.jdbc.Driver
  com.mysql.fabric.jdbc.FabricMySQLDriver
 connecting to database : jdbc:mysql://localhost:3306/payroll_service?userSSL=false
-Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@794f8502
+Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@79592d5e
 Driver Loaded
  com.mysql.jdbc.Driver
  com.mysql.fabric.jdbc.FabricMySQLDriver
 connecting to database : jdbc:mysql://localhost:3306/payroll_service?userSSL=false
-Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@792704b6
+Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@7cc5f9b9
+Driver Loaded
+ com.mysql.jdbc.Driver
+ com.mysql.fabric.jdbc.FabricMySQLDriver
+connecting to database : jdbc:mysql://localhost:3306/payroll_service?userSSL=false
+Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@3f22098d
 Driver Loaded
  com.mysql.jdbc.Driver
  com.mysql.fabric.jdbc.FabricMySQLDriver
 ]]></system-out>
-  <system-err><![CDATA[Fri Aug 20 17:29:57 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
-Fri Aug 20 17:29:58 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
-Fri Aug 20 17:29:58 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
-Fri Aug 20 17:29:58 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
-Fri Aug 20 17:29:58 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
-Fri Aug 20 17:29:58 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+  <system-err><![CDATA[Fri Aug 20 21:32:44 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Aug 20 21:32:45 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Aug 20 21:32:45 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Aug 20 21:32:45 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Aug 20 21:32:45 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Aug 20 21:32:45 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Aug 20 21:32:45 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
 ]]></system-err>
 </testsuite>

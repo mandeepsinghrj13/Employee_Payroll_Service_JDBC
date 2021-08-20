@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">2</div>
+<div class="counter">4</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.779s</div>
+<div class="counter">2.191s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,13 +81,23 @@
 </tr>
 </thead>
 <tr>
+<td class="success">givenEmployeePayrollInDB_WhenRetrieved_ShouldMatchEmployeeCount</td>
+<td class="success">0.058s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">givenEmployeePayrollInDB_WhenRetrieved_ShouldNotMatchEmployeeCount</td>
+<td class="success">1.403s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDB</td>
-<td class="success">0.277s</td>
+<td class="success">0.360s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDBUsingPreparedStatement</td>
-<td class="success">1.502s</td>
+<td class="success">0.370s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -101,27 +111,32 @@ Driver Loaded
  com.mysql.jdbc.Driver
  com.mysql.fabric.jdbc.FabricMySQLDriver
 connecting to database : jdbc:mysql://localhost:3306/payroll_service?userSSL=false
-Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@2c29a4fe
+Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@53914e0c
 Driver Loaded
  com.mysql.jdbc.Driver
  com.mysql.fabric.jdbc.FabricMySQLDriver
 connecting to database : jdbc:mysql://localhost:3306/payroll_service?userSSL=false
-Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@5b07b1db
+Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@6d930309
 Driver Loaded
  com.mysql.jdbc.Driver
  com.mysql.fabric.jdbc.FabricMySQLDriver
 connecting to database : jdbc:mysql://localhost:3306/payroll_service?userSSL=false
-Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@612f9a18
+Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@3b2a9e04
 Driver Loaded
  com.mysql.jdbc.Driver
  com.mysql.fabric.jdbc.FabricMySQLDriver
 connecting to database : jdbc:mysql://localhost:3306/payroll_service?userSSL=false
-Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@794f8502
+Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@79592d5e
 Driver Loaded
  com.mysql.jdbc.Driver
  com.mysql.fabric.jdbc.FabricMySQLDriver
 connecting to database : jdbc:mysql://localhost:3306/payroll_service?userSSL=false
-Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@792704b6
+Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@7cc5f9b9
+Driver Loaded
+ com.mysql.jdbc.Driver
+ com.mysql.fabric.jdbc.FabricMySQLDriver
+connecting to database : jdbc:mysql://localhost:3306/payroll_service?userSSL=false
+Connection to the Database Successfully! :com.mysql.jdbc.JDBC4Connection@3f22098d
 Driver Loaded
  com.mysql.jdbc.Driver
  com.mysql.fabric.jdbc.FabricMySQLDriver
@@ -131,12 +146,13 @@ Driver Loaded
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Fri Aug 20 17:29:57 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
-Fri Aug 20 17:29:58 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
-Fri Aug 20 17:29:58 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
-Fri Aug 20 17:29:58 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
-Fri Aug 20 17:29:58 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
-Fri Aug 20 17:29:58 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+<pre>Fri Aug 20 21:32:44 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Aug 20 21:32:45 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Aug 20 21:32:45 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Aug 20 21:32:45 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Aug 20 21:32:45 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Aug 20 21:32:45 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Fri Aug 20 21:32:45 IST 2021 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
 </pre>
 </span>
 </div>
@@ -148,7 +164,7 @@ Fri Aug 20 17:29:58 IST 2021 WARN: Establishing SSL connection without server's 
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at Aug 20, 2021 5:29:58 PM</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at Aug 20, 2021 9:32:46 PM</p>
 </div>
 </div>
 </body>
