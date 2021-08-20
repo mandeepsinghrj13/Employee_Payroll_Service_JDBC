@@ -42,4 +42,12 @@ public class EmployeePayrollService {
         if (employeePayrollData != null)
             employeePayrollData.salary = salary;
     }
+    public void updateEmployeeSalaryUsingPreparedStatement(String name, double salary) {
+        int result = employeePayrollDBService.updateEmployeeDataUsingStatement(name, salary);
+        if (result == 0)
+            return;
+        EmployeePayrollData employeePayrollData = this.getEmployeePayrollData(name);
+        if (employeePayrollData != null)
+            employeePayrollData.salary = salary;
+    }
 }
